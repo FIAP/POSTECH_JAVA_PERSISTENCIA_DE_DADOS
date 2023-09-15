@@ -1,0 +1,21 @@
+
+<div class="logo">
+    <a href="https://www.creative-tim.com" class="simple-text logo-mini">
+      <div class="logo-img">
+          <img src="https://cdn.icon-icons.com/icons2/2418/PNG/512/student_pupil_disciple_follower_adherent_apostle_icon_146774.png"/>
+      </div>
+    </a>
+    <a href="#" class="simple-text logo-normal">
+        FIAP - Cursos
+    </a>
+</div>
+<div class="sidebar-wrapper">
+    <ul class="nav">
+        <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
+            <a [routerLink]="[menuItem.path]">
+                <i class="now-ui-icons {{menuItem.icon}}"></i>
+                <p>{{menuItem.title}}</p>
+            </a>
+        </li>
+    </ul>
+</div>
